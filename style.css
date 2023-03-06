@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700;800&family=Heebo:wght@200;300;500;600;700&family=Montserrat:wght@300;400;500;600&family=Oswald:wght@300;400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700;800&family=Heebo:wght@200;300;500;600;700&family=Montserrat:wght@300;400;500;600&family=Oswald:wght@300;400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
   scrollbar-width: thin;
-
-
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -15,32 +14,25 @@
   --secondary-color: #fafafa;
   --primary-font-color: #415bcf;
   --secondary-font-color: black;
-  --social-color:#415bcf;
+  --social-color: #415bcf;
   --nav-bar-color: rgb(255, 255, 255);
-  --header-icon:#fafafa;
-
-
-     
+  --header-icon: #fafafa;
 }
 
 .dark-mode {
   --primary-color: #415bcf;
   --secondary-color: black;
-  --font-hover-color:#415bcf;
-    --social-color: #fafafa; 
-    --nav-bar-color: rgb(22, 22, 22); 
-    --primary-font-color: black;
-    --secondary-font-color:#fafafa ;
-      --header-icon:#415bcf;
-
-
+  --font-hover-color: #415bcf;
+  --social-color: #fafafa;
+  --nav-bar-color: rgb(22, 22, 22);
+  --primary-font-color: black;
+  --secondary-font-color: #fafafa;
+  --header-icon: #415bcf;
 }
-
 
 body {
   background-color: var(--secondary-color);
 }
- 
 
 .header {
   position: fixed;
@@ -102,7 +94,7 @@ body {
   font-weight: 600;
 }
 
-.logo-close{
+.logo-close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,33 +103,33 @@ body {
 .nav-logo {
   position: absolute;
   top: 3em;
-  color:  #415bcf;
+  color: #415bcf;
   font-weight: 600;
   font-size: 2em;
-  outline: 4px solid  #415bcf;
+  outline: 4px solid #415bcf;
   outline-offset: 7px;
   width: 100px;
   text-align: center;
-  border-top: 4px solid  #415bcf;
-  border-left: 4px solid  #415bcf;
+  border-top: 4px solid #415bcf;
+  border-left: 4px solid #415bcf;
 }
 .open-nav {
   transform: translateX(0%);
 }
-.social li{
-    list-style-type: none;
+.social li {
+  list-style-type: none;
 }
-.social i{
- font-size: 20px;
- color: var(--social-color);
+.social i {
+  font-size: 20px;
+  color: var(--social-color);
 }
-.social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: 2em;
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
 }
 
 nav {
@@ -146,27 +138,25 @@ nav {
   top: 0;
   background-color: var(--nav-bar-color);
   height: 100vh;
-  width: 300px;
+  width: 250px;
   z-index: 99;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   transform: translateX(-100%);
   transition: all 0.8s;
+  overflow: hidden;
 }
 nav ul {
-width: 100%;
-text-align: center;
-
- 
+  width: 100%;
+  text-align: center;
 }
 
 nav ul li {
   list-style-type: none;
   padding: 0.7em 1em;
   cursor: pointer;
-
 }
 
 nav ul li a {
@@ -180,22 +170,22 @@ nav ul li a {
 }
 
 ul li a:hover {
-  color:#fafafa;
+  color: #fafafa;
   padding: 0em 4em;
   background-color: var(--primary-color);
 }
 
 .lolo-content {
-margin-top: 2em;
+  margin-top: 2em;
   text-transform: capitalize;
   gap: 1em;
 }
 
-.lolo-content  h3{
+.lolo-content h3 {
   font-size: 25px;
   font-weight: 700;
 }
-.lolo-content  p{
+.lolo-content p {
   font-size: 19px;
   font-weight: 500;
 }
@@ -205,35 +195,31 @@ margin-top: 2em;
   padding: 1em 2em;
   margin-top: 2em;
   flex-direction: column;
-
 }
 
-.main-content .profetional li{
- margin-left: 2em;
- font-weight: 500;
- font-size: 18px;
+.main-content .profetional li {
+  margin-left: 2em;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.profetional p{
+.profetional p {
   font-size: 19px;
   font-weight: 700;
 }
 
-.profetional{
+.profetional {
   text-transform: capitalize;
 }
 
-
-
-
 .images {
   margin-top: 1em;
-display: grid;
+  display: grid;
 }
-.images img{
-width: 200px;
-height: 200px;
-object-fit: cover;
+.images img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 .lolo-content h2 {
   text-transform: capitalize;
@@ -241,10 +227,7 @@ object-fit: cover;
   color: var(--secondary-font-color);
 }
 
-
-
-
-#cv{
+#cv {
   display: none;
 }
 
@@ -256,7 +239,7 @@ object-fit: cover;
   outline: 3px solid #415bcf;
   outline-offset: 3px;
   transition: 0.8s;
- margin-top: 2em;
+  margin-top: 2em;
 }
 
 .home button a {
@@ -273,96 +256,74 @@ object-fit: cover;
   margin-top: 10px;
   transition: 0.8s;
   color: rgb(250, 24, 24);
-  border-bottom: 4px solid var(--primary-color) ;
+  border-bottom: 4px solid var(--primary-color);
 }
-
 
 .close {
   position: absolute;
   top: 3em;
   right: 1em;
   font-size: 1.5em;
-  color:  var(--primary-color);
+  color: var(--primary-color);
 }
 
-
-
-@media only screen and (min-width:1146px) {
- 
-  .body-container{
-   padding-left: 12em;
+@media only screen and (min-width: 1146px) {
+  .body-container {
+    padding-left: 12em;
   }
-  
-  .header{
+
+  .header {
     width: 90%;
   }
-  .right{
+  .right {
     position: absolute;
     top: 0;
     right: 1em;
-
-
   }
-
-
 
   .circle {
     left: 12em;
-    
-
   }
-
 
   .close {
-visibility: hidden;
+    visibility: hidden;
   }
 
-  .menu{
+  .menu {
     display: none;
   }
 
   nav {
     transform: translateX(0%);
     width: 12em;
-   
   }
 
-  .social i:hover{
+  .social i:hover {
     color: var(--secondary-font-color);
   }
 
+  .lolo-content button:hover {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: -5px;
+    transform: scale(1.1);
+  }
 
+  .lolo-content button:hover {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: -5px;
+    transform: scale(1.1);
+  }
+  .submit:hover {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: -5px;
+    transform: scale(1.1);
+  }
 
-
-
-.lolo-content button:hover{
-  outline: 3px solid var(--secondary-color);
-  outline-offset: -5px;
-  transform: scale(1.1);
+  .images {
+    grid-template-columns: repeat(2, auto);
+  }
+  .all {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-
-.lolo-content button:hover{
-  outline: 3px solid var(--secondary-color);
-  outline-offset: -5px;
-  transform: scale(1.1);
-}
-.submit:hover{
-  outline: 3px solid var(--secondary-color);
-  outline-offset: -5px;
-  transform: scale(1.1);
-}
-
-.images{
-  grid-template-columns: repeat(2,auto);
-}
-.all{
-  display: flex;
-  justify-content: space-between;
-
-}
-
-  
-
-}
-
-
